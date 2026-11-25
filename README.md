@@ -1,25 +1,41 @@
 # family-tree
-Multilingual Family Tree Editor
 
-## Ver.1
+Multilingual Family Tree Editor — 日本語・English・Tiếng Việt対応の家系図エディター。
 
-汎用的な家系図エディターをHTML/CSS/JavaScript（jQuery）で開発し、GitHub Pagesで利用します。
+Ver.1の入口は [`v1/index.html`](v1/index.html) です。HTML人物カードとSVGの関係線を使い、人物・パートナー・親子関係を編集します。
 
-- 仕様確定: 2026-11-25
-- 現在: 仕様書・Codex引継ぎ文・実装先を準備済み。アプリ実装は未開始です。
-- 実装先: [`v1/`](v1/README.md)
-- [詳細仕様書](docs/family-tree-v1-detailed-design.md)
-- [Codexへの実装依頼文](docs/codex-v1-implementation-request.md)
+## 起動
 
-## ディレクトリ
+Node.js 20以降でリポジトリのルートから実行します。依存パッケージのインストールやビルドは不要です。
 
-| パス | 用途 |
-|---|---|
-| `v1/` | Ver.1のアプリ（実装時に作成） |
-| `vendor/` | 外部ライブラリの共通配置先（実装時に作成） |
-| `shared/` | 必要に応じた自作共通処理 |
-| `samples/` | 架空のサンプル・検証データ（実装時に作成） |
-| `docs/` | 確定仕様・Codexへの引継ぎ |
-| `test/` | 既存の接続確認用ページ |
+```sh
+npm start
+```
 
-実在人物の個人情報・家系データはこのリポジトリへ保存しません。利用者の家系JSONはブラウザー内で編集し、ダウンロードで保存する設計です。
+ブラウザーで <http://127.0.0.1:8080/v1/> を開きます。Pythonがある場合は `python3 -m http.server 8080` でも起動できます。`file://`から直接開く方法には対応しません。
+
+## 使い方
+
+1. 「人物を追加」で人物を作成し、配置候補または「新しい家系として配置」を選びます。配置前は仮人物です。
+2. 人物カードまたは名簿から人物を選び、編集・移動・パートナー／親子接続を行います。候補は「選択」ボタンから一覧でも選べます。
+3. 家族チップ（F番号）または「関係を管理」から婚姻状態・親子種別・個別の関係解除を操作します。
+4. 編集を終えたら「JSONを保存」でダウンロードし、次回は「JSONを開く」で再開します。
+
+**自動保存はありません。再読込すると架空サンプルに戻ります。未配置人物はJSONに含まれません。** JSON読込成功時は現在のデータを置き換えます。読込失敗時は現在のデータを保持します。
+
+## GitHub Pages
+
+GitHub Pagesでこのリポジトリのルートを配信する設定にした場合、`/family-tree/v1/`へアクセスします。すべて相対パスで、ルートの`vendor/`と`samples/`も一緒に配信してください。本変更はPages設定や公開状態を変更しません。
+
+## 検証・設計
+
+```sh
+npm test
+```
+
+- [Ver.1利用方法と制約](v1/README.md)
+- [詳細仕様](docs/family-tree-v1-detailed-design.md)
+- [実装依頼文](docs/codex-v1-implementation-request.md)
+- [実装・検証記録](docs/v1-implementation-notes.md)
+
+外部CDNや解析サービスを使わず、jQuery 3.7.1（MIT）を同梱しています。家系データはページのメモリ内で扱い、サーバー送信・ブラウザーへの永続保存は行いません。実在人物の家系JSONをこの公開リポジトリに追加しないでください。
