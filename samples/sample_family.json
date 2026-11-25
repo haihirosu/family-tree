@@ -1,0 +1,301 @@
+{
+  "schema_version": 1,
+  "auto_increment": {
+    "persons": 16,
+    "families": 7,
+    "family_children": 9
+  },
+  "persons": [
+    {
+      "name": "（架空）木村 晴夫",
+      "nickname": "Haruo",
+      "gender": "male",
+      "residence": "架空市",
+      "birth_place": null,
+      "birth_date": 19420000,
+      "occupation": "架空の職業",
+      "is_alive": true,
+      "death_date": null,
+      "notes": "この人物はサンプル用の架空人物です。",
+      "id": 1
+    },
+    {
+      "name": "（架空）木村 さくら",
+      "nickname": "Sakura",
+      "gender": "female",
+      "residence": null,
+      "birth_place": null,
+      "birth_date": 19450600,
+      "occupation": null,
+      "is_alive": false,
+      "death_date": 20190500,
+      "notes": null,
+      "id": 2
+    },
+    {
+      "name": "（架空）木村 直人",
+      "nickname": "Naoto",
+      "gender": "male",
+      "residence": null,
+      "birth_place": null,
+      "birth_date": 19700315,
+      "occupation": null,
+      "is_alive": true,
+      "death_date": null,
+      "notes": null,
+      "id": 3
+    },
+    {
+      "name": "（架空）木村 つばき",
+      "nickname": "Tsubaki",
+      "gender": "female",
+      "residence": null,
+      "birth_place": null,
+      "birth_date": 19740500,
+      "occupation": null,
+      "is_alive": true,
+      "death_date": null,
+      "notes": null,
+      "id": 4
+    },
+    {
+      "name": "（架空）木村 みどり",
+      "nickname": "Midori",
+      "gender": "female",
+      "residence": null,
+      "birth_place": null,
+      "birth_date": 19720210,
+      "occupation": null,
+      "is_alive": true,
+      "death_date": null,
+      "notes": null,
+      "id": 5
+    },
+    {
+      "name": "（架空）木村 あおい",
+      "nickname": "Aoi",
+      "gender": null,
+      "residence": null,
+      "birth_place": null,
+      "birth_date": 19750000,
+      "occupation": null,
+      "is_alive": null,
+      "death_date": null,
+      "notes": null,
+      "id": 6
+    },
+    {
+      "name": "（架空）木村 ひなた",
+      "nickname": "Hinata",
+      "gender": null,
+      "residence": null,
+      "birth_place": null,
+      "birth_date": 20010612,
+      "occupation": null,
+      "is_alive": true,
+      "death_date": null,
+      "notes": null,
+      "id": 7
+    },
+    {
+      "name": "（架空）木村 海",
+      "nickname": "Kai",
+      "gender": "male",
+      "residence": null,
+      "birth_place": null,
+      "birth_date": 20040000,
+      "occupation": null,
+      "is_alive": true,
+      "death_date": null,
+      "notes": null,
+      "id": 8
+    },
+    {
+      "name": "（架空）木村 すみれ",
+      "nickname": "Sumire",
+      "gender": "female",
+      "residence": null,
+      "birth_place": null,
+      "birth_date": 20120900,
+      "occupation": null,
+      "is_alive": true,
+      "death_date": null,
+      "notes": null,
+      "id": 9
+    },
+    {
+      "name": "（架空）木村 蓮",
+      "nickname": "Ren",
+      "gender": "male",
+      "residence": null,
+      "birth_place": null,
+      "birth_date": 20081024,
+      "occupation": null,
+      "is_alive": true,
+      "death_date": null,
+      "notes": null,
+      "id": 10
+    },
+    {
+      "name": "（架空）Trần Minh",
+      "nickname": "Minh",
+      "gender": "male",
+      "residence": null,
+      "birth_place": "Thành phố mẫu (hư cấu)",
+      "birth_date": 19630000,
+      "occupation": null,
+      "is_alive": true,
+      "death_date": null,
+      "notes": null,
+      "id": 11
+    },
+    {
+      "name": "（架空）Trần Hồng",
+      "nickname": "Hồng",
+      "gender": "female",
+      "residence": null,
+      "birth_place": null,
+      "birth_date": 19660900,
+      "occupation": null,
+      "is_alive": true,
+      "death_date": null,
+      "notes": null,
+      "id": 12
+    },
+    {
+      "name": "（架空）Trần An",
+      "nickname": "An",
+      "gender": null,
+      "residence": null,
+      "birth_place": null,
+      "birth_date": 19930200,
+      "occupation": null,
+      "is_alive": null,
+      "death_date": null,
+      "notes": null,
+      "id": 13
+    },
+    {
+      "name": "（架空）Alex Example",
+      "nickname": null,
+      "gender": "other",
+      "residence": null,
+      "birth_place": null,
+      "birth_date": null,
+      "occupation": null,
+      "is_alive": null,
+      "death_date": null,
+      "notes": null,
+      "id": 14
+    },
+    {
+      "name": "（架空）Robin Example",
+      "nickname": null,
+      "gender": null,
+      "residence": null,
+      "birth_place": null,
+      "birth_date": 19950000,
+      "occupation": null,
+      "is_alive": null,
+      "death_date": null,
+      "notes": null,
+      "id": 15
+    }
+  ],
+  "families": [
+    {
+      "id": 1,
+      "partner1_id": 1,
+      "partner2_id": 2,
+      "marital_status": "married"
+    },
+    {
+      "id": 2,
+      "partner1_id": 3,
+      "partner2_id": 5,
+      "marital_status": "divorced"
+    },
+    {
+      "id": 3,
+      "partner1_id": 3,
+      "partner2_id": 6,
+      "marital_status": "married"
+    },
+    {
+      "id": 4,
+      "partner1_id": 4,
+      "partner2_id": null,
+      "marital_status": null
+    },
+    {
+      "id": 5,
+      "partner1_id": 11,
+      "partner2_id": 12,
+      "marital_status": "married"
+    },
+    {
+      "id": 6,
+      "partner1_id": null,
+      "partner2_id": null,
+      "marital_status": null
+    }
+  ],
+  "family_children": [
+    {
+      "id": 1,
+      "family_id": 1,
+      "child_id": 3,
+      "sort_order": 1,
+      "relation_type": "biological"
+    },
+    {
+      "id": 2,
+      "family_id": 1,
+      "child_id": 4,
+      "sort_order": 2,
+      "relation_type": "biological"
+    },
+    {
+      "id": 3,
+      "family_id": 2,
+      "child_id": 7,
+      "sort_order": 1,
+      "relation_type": "biological"
+    },
+    {
+      "id": 4,
+      "family_id": 2,
+      "child_id": 8,
+      "sort_order": 2,
+      "relation_type": null
+    },
+    {
+      "id": 5,
+      "family_id": 3,
+      "child_id": 9,
+      "sort_order": 1,
+      "relation_type": "biological"
+    },
+    {
+      "id": 6,
+      "family_id": 4,
+      "child_id": 10,
+      "sort_order": 1,
+      "relation_type": "adopted"
+    },
+    {
+      "id": 7,
+      "family_id": 5,
+      "child_id": 13,
+      "sort_order": 1,
+      "relation_type": "biological"
+    },
+    {
+      "id": 8,
+      "family_id": 6,
+      "child_id": 15,
+      "sort_order": 1,
+      "relation_type": null
+    }
+  ]
+}
